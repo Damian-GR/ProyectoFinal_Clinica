@@ -1,0 +1,16 @@
+#check::before{
+color: red;
+content: '\2714';
+}
+
+#inner_tittle::after{
+    content: '\00AE';
+}
+
+footer{
+    width:100%;
+    position:absolute;
+    
+    left:0;
+    background-color:blue;
+  }
