@@ -21,30 +21,28 @@
             About Us
           </h5>
           <h1 class="display-5 mb-0" id="inner_tittle">
-            Una Clinica Dental En La Que Puedes Confiar.
+            {{midTitle}}
           </h1>
         </div>
         <h4 class="text-body fst-italic mb-4">
-          Nuestra clinica cuenta con los estandares mas altos de calidad.
+          {{midTitle1}}
         </h4>
         <p class="mb-4">
-          Estamos habalados por diferentes organizmos de odontologia nacionales lo
-          que nos permite ofrecerte el servicio de calidad que mereces a un precio
-          justo.
+         {{midText}}
         </p>
         <div class="row g-3">
           <div class="col-sm-6">
-            <h5 class="mb-3" id="check">Ganadora a Mejor Clinica</h5>
-            <h5 class="mb-3" id="check">Personal Profesional</h5>
+            <h5 class="mb-3" id="check">{{bullet1}}</h5>
+            <h5 class="mb-3" id="check">{{bullet2}}</h5>
           </div>
           <div class="col-sm-6">
-            <h5 class="mb-3" id="check">Emergencias 24/7</h5>
-            <h5 class="mb-3" id="check">Precios Justos</h5>
+            <h5 class="mb-3" id="check">{{bullet3}}</h5>
+            <h5 class="mb-3" id="check">{{bullet4}}</h5>
           </div>
         </div>
         <div style="text-align: center">
           <a href="/doctor" class="btn btn-primary py-3 px-5 mt-4"
-            >Ver Doctores</a
+            >{{bullet4}}</a
           >
         </div>
       </div>
@@ -57,6 +55,13 @@
         </div>
       </div>
     </div>
+    <br>
+    <hr>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item"       [src]="video | safedom: 'https://www.youtube.com/embed/'"
+      allowfullscreen=""></iframe>
+    </div>
+    
   </div>
 <br>
 

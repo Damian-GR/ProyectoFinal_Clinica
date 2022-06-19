@@ -23,14 +23,13 @@ Services
 
 <div class="d-flex flex-column">
     <div class="p-2">
-        <h1 class="text-capitalize">Los mejores servicios dentales a tu disposición</h1>
+        <h1 class="text-capitalize">{{text1}}</h1>
     </div>
     <div class="p-2">
-        <h5>Dale un vistazo a todos nuestros servicios.</h5>
+        <h5>{{text2}}</h5>
     </div>
     <div class="p-2">
-        <p>Ofrecemos solamente los mejores procedimientos disponibles a un precio 
-            justo y con los mejores resultados.
+        <p>{{text3}}
         </p>
     </div>
   </div>
@@ -41,90 +40,95 @@ Services
     <div class="card">
         <img class="card-img-top" src="../../assets/cardimg1.jpg" alt="Card image cap">
         <div class="card-body" style="text-align: center;">
-          <h4 class="card-title">Limpieza Dental</h4>
+          <h4 class="card-title">{{service1}}</h4>
+          <span class="badge badge-pill badge-info" >{{1500 | currency: 'MXN'}}</span>
           <p class="card-text">
-           Dentistas Profesionales <i class="fa-solid fa-circle-check text-right" ></i>
+           {{text6}} <i class="fa-solid fa-circle-check text-right" ></i>
           </p>
           <p class="card-text">
-            Equipo Moderno  <i class="fa-solid fa-circle-check"></i>
+            {{text7}}  <i class="fa-solid fa-circle-check"></i>
            </p>
            <p class="card-text">
-            Disponibilidad 24/7 <i class="fa-solid fa-circle-check"></i>
+            {{text8}} <i class="fa-solid fa-circle-check"></i>
            </p>
-          <a href="/contact" class="btn btn-primary">Contáctanos</a>
+          <a href="/contact" class="btn btn-primary">{{text9}}</a>
         </div>
       </div>
       
       <div class="card">
         <img class="card-img-top" src="../../assets/cardimg2.jpg" alt="Card image cap">
         <div class="card-body" style="text-align: center;">
-          <h4 class="card-title">Extracción</h4>
+          <h4 class="card-title">{{service2}}</h4>
+          <span class="badge badge-pill badge-info" >{{1100 | currency: 'MXN'}}</span>
           <p class="card-text">
-            Dentistas Profesionales <i class="fa-solid fa-circle-check text-right" ></i>
+            {{text6}} <i class="fa-solid fa-circle-check text-right" ></i>
            </p>
            <p class="card-text">
-             Equipo Moderno  <i class="fa-solid fa-circle-check"></i>
+             {{text7}}  <i class="fa-solid fa-circle-check"></i>
             </p>
             <p class="card-text">
-             Disponibilidad 24/7 <i class="fa-solid fa-circle-check"></i>
+             {{text8}} <i class="fa-solid fa-circle-check"></i>
             </p>
-          <a href="/contact" class="btn btn-primary">Contáctanos</a>
+          <a href="/contact" class="btn btn-primary">{{text9}}</a>
         </div>
       </div>
 
       <div class="card">
         <img class="card-img-top" src="../../assets/cardimg3.jpg" alt="Card image cap">
         <div class="card-body" style="text-align: center;">
-          <h4 class="card-title">Endodoncia</h4>
+          <h4 class="card-title">{{service3}}</h4>
+          <span class="badge badge-pill badge-info" >{{3900 | currency: 'MXN'}}</span>
           <p class="card-text">
-            Dentistas Profesionales <i class="fa-solid fa-circle-check text-right" ></i>
+            {{text6}} <i class="fa-solid fa-circle-check text-right" ></i>
            </p>
            <p class="card-text">
-             Equipo Moderno  <i class="fa-solid fa-circle-check"></i>
+             {{text7}}  <i class="fa-solid fa-circle-check"></i>
             </p>
             <p class="card-text">
-             Disponibilidad 24/7 <i class="fa-solid fa-circle-check"></i>
+             {{text8}} <i class="fa-solid fa-circle-check"></i>
             </p>
-          <a href="/contact" class="btn btn-primary">Contáctanos</a>
+          <a href="/contact" class="btn btn-primary">{{text9}}</a>
         </div>
       </div>
       
   <div class="card bg-primary p-3 text-center">
-    <!-- Card content -->
-    <p class="text-white text-capitalize" style="font-size: 30px;">Nuestros servicios</p>
+    
+    <p class="text-white text-capitalize" style="font-size: 30px;">{{text4}}</p>
   </div>
 
   <div class="card">
   <img class="card-img-top" src="../../assets/cardimg4.jpg" alt="Card image cap">
   <div class="card-body" style="text-align: center;">
-    <h4 class="card-title">Ortodoncia Invisible</h4>
+    <h4 class="card-title">{{service4}}</h4>
+    <span class="badge badge-pill badge-info" >{{27000 | currency: 'MXN'}}</span>
     <p class="card-text">
-        Dentistas Profesionales <i class="fa-solid fa-circle-check text-right" ></i>
+        {{text6}}<i class="fa-solid fa-circle-check text-right" ></i>
        </p>
        <p class="card-text">
-         Equipo Moderno  <i class="fa-solid fa-circle-check"></i>
+         {{text7}}  <i class="fa-solid fa-circle-check"></i>
         </p>
         <p class="card-text">
-         Disponibilidad 24/7 <i class="fa-solid fa-circle-check"></i>
+         {{text8}} <i class="fa-solid fa-circle-check"></i>
         </p>
-    <a href="/contact" class="btn btn-primary">Contáctanos</a>
+    <a href="/contact" class="btn btn-primary">{{text9}}</a>
 </div>
 </div>
 
 <div class="card">
     <img class="card-img-top" src="../../assets/cardimg5.jpg" alt="Card image cap">
     <div class="card-body" style="text-align: center;">
-      <h4 class="card-title">Puentes</h4>
+      <h4 class="card-title">{{service5}}</h4>
+      <span class="badge  badge-pill badge-info" >{{18000 | currency: 'MXN'}}</span>
       <p class="card-text">
-        Dentistas Profesionales <i class="fa-solid fa-circle-check text-right" ></i>
+        {{text6}} <i class="fa-solid fa-circle-check text-right" ></i>
        </p>
        <p class="card-text">
-         Equipo Moderno  <i class="fa-solid fa-circle-check"></i>
+         {{text7}}  <i class="fa-solid fa-circle-check"></i>
         </p>
         <p class="card-text">
-         Disponibilidad 24/7 <i class="fa-solid fa-circle-check"></i>
+         {{text8}} <i class="fa-solid fa-circle-check"></i>
         </p>
-      <a href="/contact" class="btn btn-primary">Contáctanos</a>
+      <a href="/contact" class="btn btn-primary">{{text9}}</a>
     </div>
   </div>
   
@@ -132,17 +136,18 @@ Services
   <div class="card">
     <img class="card-img-top" src="../../assets/cardimg6.jpg" alt="Card image cap">
     <div class="card-body" style="text-align: center;">
-      <h4 class="card-title">Coronas</h4>
+      <h4 class="card-title">{{service6}}</h4>
+      <span class="badge badge-pill badge-info" >{{6500 | currency: 'MXN'}}</span>
       <p class="card-text">
-        Dentistas Profesionales <i class="fa-solid fa-circle-check text-right" ></i>
+        {{text6}} <i class="fa-solid fa-circle-check text-right" ></i>
        </p>
        <p class="card-text">
-         Equipo Moderno  <i class="fa-solid fa-circle-check"></i>
+         {{text7}}  <i class="fa-solid fa-circle-check"></i>
         </p>
         <p class="card-text">
-         Disponibilidad 24/7 <i class="fa-solid fa-circle-check"></i>
+         {{text8}} <i class="fa-solid fa-circle-check"></i>
         </p>
-      <a href="/contact" class="btn btn-primary">Contáctanos</a>
+      <a href="/contact" class="btn btn-primary">{{text9}}</a>
     </div>
   </div>
   
@@ -150,49 +155,49 @@ Services
 <br>
 
     <footer class="page-footer font-small indigo bg-dark ">
-      <!-- Footer Links -->
+      
       <div class="py-5" style="text-align: center">
         <div class="">
-          <!-- Facebook -->
+          
           <a href="https://www.facebook.com" class="fb-ic">
             <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x">
             </i>
           </a>
-          <!-- Twitter -->
+          
           <a href="https://www.twitter.com" class="tw-ic">
             <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
           </a>
-          <!-- Google +-->
+        
           <a href="https://www.google.com" class="gplus-ic">
             <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x">
             </i>
           </a>
-          <!--Linkedin -->
+      
           <a href="https://www.whatsapp.com" class="li-ic">
             <i
               class="fa-brands fa-whatsapp fa-lg white-text mr-md-5 mr-3 fa-2x"
             >
             </i>
           </a>
-          <!--Instagram-->
+          
           <a href="https://www.instagram.com" class="ins-ic">
             <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x">
             </i>
           </a>
-          <!--Pinterest-->
+      
           <a href="https://www.pinterest.com" class="pin-ic">
             <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
           </a>
         </div>
       </div>
-      <!-- Copyright -->
+    
       <div class="footer-copyright text-center text-white">
         © 2020 Copyright:
         <a href="/home"> DentaCareClinic.com</a>
       </div>
-      <!-- Copyright -->
+  
     </footer>
-    <!-- Footer -->
+    
 
 
 

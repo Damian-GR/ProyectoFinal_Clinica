@@ -12,6 +12,7 @@ import { DoctorComponent } from './doctor/doctor.component';
 import { HelpComponent } from './help/help.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { SafedomPipe } from './safe-dom.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SignupComponent } from './signup/signup.component';
     DoctorComponent,
     HelpComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    SafedomPipe
   ],
   imports: [
     BrowserModule,

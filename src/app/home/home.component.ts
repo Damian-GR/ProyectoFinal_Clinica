@@ -8,6 +8,22 @@ import Speech from 'speak-tts';
 })
 export class HomeComponent implements OnInit {
 
+  title = `Horarios de Atención`;
+  text = "Lunes a Viernes 9:00am - 6:00pm";
+  text1 = "Sábado 8:00am - 3:00pm"
+  text2 = "Agendar una cita";
+
+  midTitle = "Una Clínica Dental En La Que Puedes Confiar.";
+  midTitle1 = "Nuestra clínica cuenta con los estándares mas altos de calidad.";
+  midText = `Estamos abalados por diferentes organismos de odontología nacionales lo
+  que nos permite ofrecerte el servicio de calidad que mereces a un precio justo`;
+  bullet1 = "Ganadora a Mejor Clínica";
+  bullet2 = "Personal Profesional";
+  bullet3 = "Emergencias 24/7";
+  bullet4 = "Precios Justos";
+
+  button = "Ver Doctores";
+
   speech: any;
   speechData: any;
   constructor() {
@@ -35,7 +51,7 @@ export class HomeComponent implements OnInit {
   start() {
     this.speech
       .speak({
-        
+          text: this.title , this: this.text,  
       })
       .then(() => {
         console.log('Exito');
@@ -43,6 +59,52 @@ export class HomeComponent implements OnInit {
       .catch((e: any) => {
         console.error('Ocurrio un error', e);
       });
+
+      this.speech
+      .speak({
+          text: this.text   
+      })
+      this.speech
+      .speak({
+          text: this.text1  
+      })
+      this.speech
+      .speak({
+          text: this.text2  
+      })
+
+      this.speech
+      .speak({
+          text: this.midTitle  
+      })
+      this.speech
+      .speak({
+          text: this.midTitle1  
+      })
+      this.speech
+      .speak({
+          text: this.midText  
+      })
+      this.speech
+      .speak({
+          text: this.bullet1  
+      })
+      this.speech
+      .speak({
+          text: this.bullet2  
+      })
+      this.speech
+      .speak({
+          text: this.bullet3  
+      })
+      this.speech
+      .speak({
+          text: this.bullet4  
+      })
+      this.speech
+      .speak({
+          text: this.button  
+      })
 
   }
 

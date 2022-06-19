@@ -8,6 +8,19 @@ import Speech from 'speak-tts';
 })
 export class AboutComponent implements OnInit {
 
+  video = "CIHc2B06PFc";
+
+  midTitle = "Una Clínica Dental En La Que Puedes Confiar.";
+  midTitle1 = "Nuestra clínica cuenta con los estándares mas altos de calidad.";
+  midText = `Estamos abalados por diferentes organismos de odontología nacionales lo
+  que nos permite ofrecerte el servicio de calidad que mereces a un precio justo`;
+  bullet1 = "Ganadora a Mejor Clínica";
+  bullet2 = "Personal Profesional";
+  bullet3 = "Emergencias 24/7";
+  bullet4 = "Precios Justos";
+
+  button = "Ver Doctores";
+
   speech: any;
   speechData: any;
   constructor() {
@@ -35,6 +48,7 @@ export class AboutComponent implements OnInit {
   start() {
     this.speech
       .speak({
+      text: this.midTitle,
         
       })
       .then(() => {
@@ -43,6 +57,35 @@ export class AboutComponent implements OnInit {
       .catch((e: any) => {
         console.error('Ocurrio un error', e);
       });
+
+      this.speech
+      .speak({
+          text: this.midTitle1  
+      })
+      this.speech
+      .speak({
+          text: this.midText  
+      })
+      this.speech
+      .speak({
+          text: this.bullet1  
+      })
+      this.speech
+      .speak({
+          text: this.bullet2  
+      })
+      this.speech
+      .speak({
+          text: this.bullet3  
+      })
+      this.speech
+      .speak({
+          text: this.bullet4  
+      })
+      this.speech
+      .speak({
+          text: this.button  
+      })
 
   }
 

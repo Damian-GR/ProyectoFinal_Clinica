@@ -18,12 +18,12 @@
     <img src="../../assets/faq.jpg" class="img-fluid" alt="Responsive image" style="width: 600px;">
     </div>
     <p class="text-center mb-5 text-capitalize" style="margin-top: 10px;">
-        Aquí responderemos a tus preguntas mas frecuentes de la mejor manera posible.
+        {{title}}
     </p>
   
     <div class="row">
       <div class="col-md-6 col-lg-4 mb-4">
-        <h6 class="mb-3 text-primary"><i class="fa-solid fa-money-bill"></i> ¿Cuentan con planes de financiamiento?
+        <h6 class="mb-3 text-primary"><i class="fa-solid fa-money-bill"></i> {{q1}}
         </h6>
         <p>
           <strong><u>Asi es</u></strong>, todos nuestros procedimientos cuentan con diferentes planes de financiamiento, pregúntale a tu doctor tus opciones de financiamiento.
@@ -31,7 +31,7 @@
       </div>
   
       <div class="col-md-6 col-lg-4 mb-4">
-        <h6 class="mb-3 text-primary"><i class="fa-solid fa-comment-medical"></i> ¿Los doctores son profesionales?
+        <h6 class="mb-3 text-primary"><i class="fa-solid fa-comment-medical"></i> {{q2}}
         </h6>
         <p>
           <strong><u>Si</u></strong>, todos nuestros especialistas están avalados y certificados por diferentes instituciones de renombre nacional e internacional.
@@ -39,7 +39,7 @@
       </div>
   
       <div class="col-md-6 col-lg-4 mb-4">
-        <h6 class="mb-3 text-primary"><i class="fas fa-user text-primary pe-2"></i> ¿Cómo puedo ponerme en contacto con ustedes?
+        <h6 class="mb-3 text-primary"><i class="fas fa-user text-primary pe-2"></i> {{q3}}
 
         </h6>
         <p>
@@ -49,7 +49,7 @@
       </div>
   
       <div class="col-md-6 col-lg-4 mb-4">
-        <h6 class="mb-3 text-primary"><i class="fa-solid fa-user-plus"></i> ¿Cómo puedo crear una cuenta DentaCare?
+        <h6 class="mb-3 text-primary"><i class="fa-solid fa-user-plus"></i> {{q4}}
         </h6>
         <p>
             Es muy fácil, solamente has click  <a [routerLink]="['/signup']">aquí</a>, y sigue las instrucciones del formulario.
@@ -58,7 +58,7 @@
       </div>
   
       <div class="col-md-6 col-lg-4 mb-4">
-        <h6 class="mb-3 text-primary"><i class="fas fa-home text-primary pe-2"></i> ¿Qué servicios ofrecen como clínica dental?
+        <h6 class="mb-3 text-primary"><i class="fas fa-home text-primary pe-2"></i> {{q5}}
 
         </h6>
         Puedes revisar todos nuestros servicios haciendo click <a [routerLink]="['/services']">aquí.</a>
@@ -66,7 +66,7 @@
       </div>
   
       <div class="col-md-6 col-lg-4 mb-4">
-        <h6 class="mb-3 text-primary"><i class="fas fa-book-open text-primary pe-2"></i> ¿Qué es  DentaCare?
+        <h6 class="mb-3 text-primary"><i class="fas fa-book-open text-primary pe-2"></i> {{q6}}
         </h6>
         <p>
             DentaCare es una clínica dental especializada que ofrece una gran variedad de servicios dentales a un precio justo y siempre de calidad. Sí quieres saber mas sobre nosotros visita nuestra sección <a [routerLink]="['/about']">Abou Us.</a>

@@ -7,6 +7,12 @@ import Speech from 'speak-tts';
 })
 export class ContactComponent implements OnInit {
 
+
+  title = "¡Ponte en contacto con Nosotros!";
+  text1 = "Numero Telefónico: 920-379-4022";
+  text2 = "Dudas o Comentarios, ¡Por favor escríbenos!";
+  text3 = "Ponte en contacto";
+
   speech: any;
   speechData: any;
   constructor() {
@@ -34,7 +40,7 @@ export class ContactComponent implements OnInit {
   start() {
     this.speech
       .speak({
-        
+        text: this.title,       
       })
       .then(() => {
         console.log('Exito');
@@ -42,6 +48,18 @@ export class ContactComponent implements OnInit {
       .catch((e: any) => {
         console.error('Ocurrio un error', e);
       });
+      this.speech
+      .speak({
+        text: this.text1,       
+      })
+      this.speech
+      .speak({
+        text: this.text2,       
+      })
+      this.speech
+      .speak({
+        text: this.text3,       
+      })
 
   }
 
