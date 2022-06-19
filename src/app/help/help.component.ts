@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import Speech from 'speak-tts';
 
 @Component({
-  selector: 'app-doctor',
-  templateUrl: './doctor.component.html',
-  styleUrls: ['./doctor.component.css']
+  selector: 'app-help',
+  templateUrl: './help.component.html',
+  styleUrls: ['./help.component.css']
 })
-export class DoctorComponent implements OnInit {
+export class HelpComponent implements OnInit {
 
   speech: any;
   speechData: any;

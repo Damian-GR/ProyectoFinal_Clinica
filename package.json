@@ -22,6 +22,7 @@
     "node.js": "^0.0.1-security",
     "popper.js": "^1.16.1",
     "rxjs": "~7.5.0",
+    "speak-tts": "^2.0.8",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },

@@ -1,37 +1,43 @@
-<nav class="navbar sticky-top navbar-expand-lg navbar-normal " style="background-color: #e3f2fd;">
+<nav class="navbar sticky-top   navbar-expand-lg  bg-primary " >
     
-    <a class="navbar-brand" href="/home"><img src="../../assets/happy.png" width="30"  height="30" alt="">DentaCare</a>
+    <a class="navbar-brand text-white" href="/home"><img src="../../assets/happy.png" width="30"  height="30" alt="">DentaCare</a>
 
-    <button class="navbar-toggler " style="background-color: yellowgreen;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon "></span>
+    <button class="navbar-toggler "    type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon " ></span>
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active " >
-          <a class="nav-link" [routerLink]="['/home']" >Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link text-white" [routerLink]="['/home']" >Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/about']">About</a>
+          <a class="nav-link text-white" [routerLink]="['/about']">About</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/services']">Services</a>
+            <a class="nav-link text-white" [routerLink]="['/services']">Services</a>
           </li>
          <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/contact']">Contact</a>
+          <a class="nav-link text-white" [routerLink]="['/contact']">Contact</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/doctor']">Doctors</a>
+          <a class="nav-link text-white" [routerLink]="['/doctor']">Doctors</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" [routerLink]="['/help']">Help</a>
         </li>
       </ul>
 
-      <!--
+      
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <button class="btn btn-success " style="margin-right: 10px;"  type="submit" [routerLink]="['/login']">Sign In</button>
+        <input class="form-control mr-sm-2" type="search" placeholder="Doctor" aria-label="Search">
+        <button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
+        
       </form>
-        -->
+      
 
       <div class="form-inline my-2 my-lg-0">
        <!-- <input type="text" class="form-control mr-sm-2" placeholder="Buscar Herroe" #buscarTexto (keyup.enter)="buscarUnHeroe(buscarTexto.value)">

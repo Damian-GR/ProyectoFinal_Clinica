@@ -1,0 +1,17 @@
+
+footer{
+    width:100%;
+    position:absolute;
+    
+    left:0;
+    background-color:blue;
+  }
+
+  .fa-circle-check{
+      color: blue;
+      float: right;
+  }
+
+  .card-text{
+      text-align: left;
+  }

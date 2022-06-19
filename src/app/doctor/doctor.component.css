@@ -1,0 +1,14 @@
+footer{
+    width:100%;
+    position:absolute;
+    
+    left:0;
+    background-color:blue;
+  }
+
+  .card-img-top {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
